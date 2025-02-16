@@ -1,4 +1,4 @@
-# http://editorconfig.org 
+# http://editorconfig.org
 
 # Указывает, что это корневой файл EditorConfig
 root = true
@@ -8,11 +8,11 @@ root = true
 charset = utf-8
 indent_style = space
 indent_size = 4
-end_of_line = lf                                                        
+end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Формат для файлов, указанных в скобочках  
+# Формат для файлов, указанных в скобочках
 [*.{go,py,rb,php}]
 indent_size = 4
 
@@ -26,13 +26,13 @@ insert_final_newline = false
 [*.md]
 trim_trailing_whitespace = false
 
-# Обозначения:  
+# Обозначения:
 
 # В файле .editorconfig вы можете указать правила для разных типов файлов. Например:
 
 # indent_style: Использовать табуляцию (tab) или пробелы (space).
-# indent_size: Количество пробелов или ширина табуляции.  
-# charset: Кодировка файла (например, utf-8).  
-# end_of_line: Тип конца строки (lf, crlf).  
+# indent_size: Количество пробелов или ширина табуляции.
+# charset: Кодировка файла (например, utf-8).
+# end_of_line: Тип конца строки (lf, crlf).
 # trim_trailing_whitespace: Удалять ли пробелы в конце строк  .
-# insert_final_newline: Добавлять ли пустую строку в конце файла.      
+# insert_final_newline: Добавлять ли пустую строку в конце файла.
