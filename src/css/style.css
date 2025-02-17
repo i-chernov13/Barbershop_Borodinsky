@@ -1,126 +1,97 @@
-*{                      /*  (*) - задаёт свойство для всех тегов */
-    box-sizing: border-box; /* Свойство для того, чтобы padding and margin учитывались в задаваемых размерах блока */
+/* Font */
+.pt-sans-narrow-regular {
+    font-family: "PT Sans Narrow", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
-    background-color: #ffe2b0; 
+.pt-sans-narrow-bold {
+    font-family: "PT Sans Narrow", serif;
+    font-weight: 700;
+    font-style: normal;
 }
-header{
-    text-align: center; /* Отцентрировали текст в блоке header */
-    margin-bottom: 20px; /* Отодвинул от себя нижний блок на 20px */
+
+/* Variables  */
+:root{
+    --basic-black: #000000;
+    --basic-extra-dark: #1A1A1A;
+    --basic-neutral: #e5e5e5;
+    --basic-extra-light: #f8f5f2;
+    --basic-white: #ffffff;
+
+    --special: #663d15;
 }
-ul{
-    list-style-type: none; /* Убрать точки в списке */
-    text-align: center;
-    padding: 0px;
+
+/* Global */
+body {
+    font-size: 14px;
+    line-height: 24px;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: 700;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    background-image: url(/src/img/backgroun-main.png);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
-a{
-    color: black;
-    text-decoration: none; /* Убрать подчёркивание у шрифта */
-    font-size: 18px;
+
+.page a {
+    text-decoration: none;
 }
-nav{
-    margin-bottom: 20px;
+
+img {
+    max-width: 100%;
+    height: auto;
 }
-li{
-    display: inline-block;  /* Позволяет выстроить блоки в строку */
-    margin-right: 100px;
-}
-li:last-child{             /* Псевдокласс  li:last-child - Задаёт свойство последнему элементу li */
-    margin-right: 0;
-}
-.section-about{
-    height: 640px;
-    /* background-image:url(../img/01-Картинка-фона.jpg);
-    background-position: center;
-    background-size:cover; */
-    background: url(../img/01-page.jpg) center/cover no-repeat;
-    position: relative;
-    margin-bottom: 20px;
-}
-.section-about__card{
-    width: 420px;
-    height: 190px;
-    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8));
-    position: absolute;
-    top: 54.5%;
-    left: 50.7%;
-    padding: 15px 0 0 0;
-    text-align: center;
-}
-.section-about__border{
-    height: 160px;
-    width: 390px;
-    border: 1px solid black;
-    margin:0 auto;
-    padding: 10px 0 0 17px;
-}
-.section-about__border_z{
-margin: 0 0 9px 0;
-font-size: 36px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-text-align: left;
-}
-.section-about__border_p{
+
+/*  Main navigation */
+
+.main-navigation{
     font-size: 16px;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left;
+    line-height: 20px;
+    color: var(--basic-white);
+    background-color: transparent;
 }
 
-.section-description_icon-box{
-    text-align: center;
-    margin-bottom: 20px;
+/* .main-navigation-wrapper {
+    background-color: var(--basic-black);
+} */
+
+.site-navigation{
+    list-style: none;
 }
 
-.section-description_icon-box img{
-margin-right: 76px;
-}
-.section-description_icon-box img:last-child{
-    margin-right: 0;
-}
-.section-description_title{
-    margin: 0;
-    font-size: 96px;
-    text-align: center;
-}
-h2>.it_is{
-    color: #f15b40;
-}
-.section-description_text_about{
-    margin: 0;
-    text-align: center;
-    font-size: 18px;
-    width: 1000px;
-    margin: 0 auto;
-}
-.section-description_map_title{
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+/* .site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+} */
 
-}
-.section-description_text-box{
-    margin-bottom: 20px;
-}
-iframe{
-}
-.section-description_map1{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.line{
-    border-top: 1px solid #99999999;
-    width: 1024px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.site-navigation a,
+.user-navigation a {
+    color: var(--basic-white);
 }
 
-@font-face {
-    /* Называем шрифт, котрый хотим загрузить из файла */
-    font-family: 'ttatet'; 
-    /* Проверяем есть ли на ПК пользователя этот шрифт */
-    src: local('Poiret One'); 
-    /* Задаём ссылку на файл со шрифтом */
-    src: url(../fonts/PoiretOne-Regular.ttf); 
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: var(--basic-extra-dark);
 }
+
+/* Advantages */
+.advantages-list{
+    list-style: none;
+}
+
+.advantages-item{
+    text-align: center;
+}
+
+.advantages-item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+
