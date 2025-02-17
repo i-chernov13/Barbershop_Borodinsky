@@ -95,3 +95,39 @@ img {
     line-height: 42px;
 }
 
+/* Index columns */
+
+/* .index-columns{
+    color: var(--basic-black);
+    background-color: var(--basic-extra-light);
+    background-image: url(/src/img/bacground-glich.jpg);
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+}
+
+РАЗОБРАТЬСЯ С ФОНОВЫМ ИЗОБРАЖЕНИЕМ
+ */
+
+.index-columns h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+/* Photogallery-content */
+
+.photogallery-content{
+    background-color:  var(--basic-extra-dark);
+    border: 7px solid var(--basic-white);
+}
+
+/* button */
+
+.button{
+    font: inherit;  /* отнаследуй фон от родителя */
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-black);
+    border: none;
+}
