@@ -122,7 +122,7 @@
             <section class="appointment">
                 <h2>Записаться</h2>
                 <p>Укажите желаемую дату и время, и мы вам, возможно, позвоним!</p>
-                <!-- Позже бахнем форму для записи сюда -->
+                <!-- Позже бахнем форму для записи сюда. Добавить класс "appointment-item" -->
             </section>
         </div>
 
@@ -135,7 +135,7 @@
             <p>
                 Барбершоп "Бородинский"<br />
                 Адрес: г. СПБ, ул. Центральная, д 32<br />
-                Как нас найти?<br />
+                <a href="#">Как нас найти?</a><br />
                 Телефон:
                 <a class="phone-number" href="tel:+79045920923">+7(904)-592-09-23</a>
             </p>
@@ -163,21 +163,23 @@
         </section>
 
         <p class="footer-copyright">
-            Design by <a href="/dist/blank.html">CHIP</a>
+            Design by <a class="copyright" href="/dist/blank.html">
+                <button class="button" type="button">CHIP</button>
+            </a>
         </p>
     </footer>
 
-    <section class="model model-login">
+    <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <!-- Здесь должна быть форма логина и пароля -->
-        <button class="model-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="model model-map">
+    <section class="modal modal-map">
         <h2>Как до нас добраться</h2>
         <!-- Здесь будет карта -->
-        <button class="model-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 
